@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[65]:
-
 
 from torchvision.datasets import VisionDataset
 from sklearn.preprocessing import LabelEncoder
