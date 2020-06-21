@@ -36,7 +36,7 @@ class Caltech(VisionDataset):
         f = np.loadtxt(path, dtype = 'str')
         
         # image_path.split('/')[0] is the label ex. airplanes/image_0177.jpg 
-        # create a DataFram with columns [image, label, encoded_label]
+        # create a DataFrame with columns [image, label, encoded_label]
         self.data = pd.DataFrame([ [pil_loader('/content/Caltech101/101_ObjectCategories/' + image_path), image_path.split('/')[0] ] 
                                   for image_path in f if not image_path.startswith('BACKGROUND_Google')], columns = ['images', 'labels'])
         
